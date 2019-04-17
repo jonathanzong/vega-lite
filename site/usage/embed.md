@@ -28,9 +28,9 @@ For production deployments you will likely want to serve your own files or use a
 If you want to automatically use the latest versions of Vega-Lite, Vega, and Vega-Embed, you can specify only the major version.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@{{ site.data.versions.vega | slice: 0 }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@{{ site.data.versions.vega-lite | slice: 0 }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@{{ site.data.versions.vega-embed | slice: 0 }}"></script>
 ```
 
 ### NPM
